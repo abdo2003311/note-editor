@@ -1,0 +1,25 @@
+footer.container-fluid{
+    background: #383838;
+    .row:first-of-type{
+        padding: 2vw 5vw !important;
+        text-align: left;
+    }
+    ul{
+        width: 50%;
+        margin: auto;
+        font-weight: 100;
+        li a{
+            font-size: 1.2vw;
+        }
+    }
+    .mainC{
+        color: $mainColor;
+    }
+    p{
+        background: #2c2c2c;
+        padding: 2vw;
+        color: #fff;
+        margin: 0;
+        width: 100%;
+    }
+}

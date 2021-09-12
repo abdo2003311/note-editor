@@ -1,0 +1,37 @@
+.features{
+    div.col-md-4.col-xs-12{
+        padding:  1vw;
+        overflow: visible !important;
+    }
+    h2{
+        text-transform: capitalize;
+        margin:  1vw 0;
+        color: $forthColor;
+        padding:  1vw;
+    }
+    .mycard{
+        border-radius: .5vw;
+        @include boxShadow(#ccc);
+        margin-bottom: 3ve;
+        img{
+            margin: 1vw;
+            width: 20vw;
+            display: block;
+            margin: auto;
+        }
+        p{
+            padding: 1vw;
+            color: #fff;
+            background: $forthColor;
+            margin-bottom: 0;
+            border-radius: 0px 0 .5vw .5vw;
+        }
+        h3{
+            background: $mainColor;
+            margin-bottom: 0;
+            padding: 1vw;
+            color: white;
+            text-transform: capitalize;
+        }
+    }
+}

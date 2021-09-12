@@ -1,0 +1,79 @@
+$mainColor: #39d84c;
+$secColor: #e54b4b;
+$thirdColor: #694be5;
+$forthColor: #646464;
+@mixin boxShadow($color) {
+	box-shadow: .1vw .1vw 1vw .1vw $color;
+}
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}
+.activeC{
+    width: 70%;
+    transition: .3s;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: $mainColor;
+    transition: all .3s ease;
+    &:hover{
+        color: #29c73c
+    }
+}
+.padding-top{
+        padding-top: 6.5vw;
+}
+html{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+h1{
+    text-transform: capitalize;
+    padding: 1vw 0 !important;
+    margin-bottom: 2vw !important;
+    font-size: 3vw;
+}
+h2{
+    font-size: 2.5vw;
+		margin-bottom: 0 !important;
+		padding: 1vw !important;
+}
+h3{
+		font-size: 2vw !important;
+		margin-bottom: 0 !important;
+}
+a,p,button,span,input,textarea, .showMore{
+    font-size: 1.8vw !important
+}
+p{
+    margin-bottom: 0 !important;
+}
+@import "_header.scss";
+@import "_services.scss";
+@import "_features.scss";
+@import "_contact.scss";
+@import "_about.scss";
+@import "_howToUse.scss";
+@import "_footer.scss";
+@media (max-width:768px) {
+    *{
+       font-size: 0.9rem
+    }
+    .padding-top{
+        padding-top: 0;
+    }
+    footer.container-fluid{
+        background: #383838;
+        .row:first-of-type{
+            padding: 1vw 0 !important;
+        }
+        ul{
+            width: auto;
+            padding: 1vw;
+        }
+    }
+}

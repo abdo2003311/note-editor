@@ -1,0 +1,33 @@
+.contact{
+		padding: 0;
+    background: $forthColor;
+    color: #fff;
+    p{
+        padding:  1vw;
+    }
+    h2{
+        color: $mainColor;
+        padding:  1vw;
+        margin-bottom: 0;
+    }
+    .input{
+        display: block;
+				margin: 2vw auto;
+        padding:  .5vw;
+        width: 95%;
+        resize: none;
+    }
+    .submit{
+        padding:  1vw;
+				margin: 0 2.5vw 2.5vw 2.5vw;
+        background: $mainColor;
+        float: right;
+        color: #fff;
+        border: unset;
+        transition: .3s;
+        &:hover{
+            cursor: pointer;
+            background: #29c73c
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.header{
+    background: $forthColor;
+    color: #fff;
+    @include boxShadow(#ccc);
+    padding-bottom: .5vw;
+    .logo{
+        padding: .5vw;
+        font-weight: 100;
+        .note{
+            color: $mainColor;
+        }
+    }
+    .fa-list{
+        position: absolute;
+        top: .5vw;
+        right: .5vw;
+        padding:.3vw;
+        z-index: 2;
+				font-size: 2vw;
+        transition: all .3s ease; 
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .headerSlider{
+        color: $forthColor;
+        transition: all .3s ease;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        box-shadow: .1vw 0px 2vw 0px #ccc inset;
+        background: #ebebeb;
+        height: 200vw;
+        padding:  2vw 1vw 1vw 1vw;
+        width: 30%;
+    }
+    .activeL{
+        color: $forthColor;
+    }
+    .active{
+        right: 0;
+    }
+    .link{
+        border-bottom: .001vw solid #999;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        color: $forthColor;
+        margin-bottom: 1vw;
+        transition: .3s;
+        &:hover{
+            color: #000;
+            border-bottom: .001vw solid #000;
+        }
+    }
+    h5{
+        margin-bottom: 1vw;
+    }
+    .download{
+        margin: 2vw;
+        text-align: center;
+    }
+    .downloadBtn{
+    color: #fff;
+    text-transform: capitalize;
+    margin: 1vw;
+    background: $mainColor;
+    padding: 1vw;
+    display: inline-block;
+    transition: .3s;
+    &:hover{
+        cursor: pointer;
+        background: #29c73c
+    }
+}
+}
